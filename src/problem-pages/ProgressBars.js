@@ -8,7 +8,7 @@ export default function ProgressBars() {
   // Implement state to track progress bars
   const [bars, setBars] = useState([{ id: `progressBar-${0}`, progress: 50 }]);
   const [count, setCount] = useState(1);
-  const [isAnimating, setIsAnimating] = useState(false);
+  // const [isAnimating, setIsAnimating] = useState(false);
   // Implement function to add a new progress bar
 
   const addBar = () => {
@@ -41,6 +41,7 @@ export default function ProgressBars() {
   // 2. Show a progress bar on render X
   // 3. Everytime a new progress bar is added, show the animation which adds the green bar fill X
   // 4. Make sure each address bar has a unique key and a unique id X
+  // 5. IS THERE A WAY TO UTILIZE THE USEEFFECT HOOK TO ANIMATE THE PROGRESS BAR O
   // brain storming
   /* 
   1. add the percentage width dynamically using a class created in the jsx so it has access to the bars.progress
@@ -64,10 +65,10 @@ export default function ProgressBars() {
   //   }
   // }, [isAnimating]);
 
-  const handleClick = () => {
-    setIsAnimating(true);
-    addBar();
-  };
+  // const handleClick = () => {
+  //   setIsAnimating(true);
+  //   addBar();
+  // };
 
   //   useEffect(() => {
   // addClass
@@ -75,7 +76,7 @@ export default function ProgressBars() {
   return (
     <div className="container">
       <h1>Progress Bars</h1>
-      <button onClick={handleClick} className="add-button">
+      <button onClick={addBar} className="add-button">
         Add Progress Bar
       </button>
 

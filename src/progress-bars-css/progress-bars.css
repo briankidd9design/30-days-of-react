@@ -65,7 +65,7 @@ h1 {
   background-color: #4caf50;
   animation: progressBar 2s ease-in-out;
   animation-fill-mode: both;
-  transition: width 2s ease-in-out;
+  /* transition: width 2s ease-in-out; */
 }
 
 /* .progress {
