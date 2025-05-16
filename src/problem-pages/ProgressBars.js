@@ -1,3 +1,17 @@
+/*Progress Bars
+Build an app where clicking the "Add" button adds progress bars to the page. The progress bars fill up gradually as soon as they are shown.
+
+Requirements:
+Clicking on the "Add" button adds a progress bar to the page
+Each progress bar starts filling up smoothly as soon as it's added
+Each bar takes approximately 2000ms to completely fill up
+Multiple bars should work independently of each other
+Notes:
+Use the useState hook to manage the list of progress bars
+Consider using the useEffect hook to handle the animation timing
+You can use CSS transitions for smooth animations
+Think about how to track the progress of each bar separately */
+
 import React from "react";
 // import Navigation from "./Navigation";
 import "../progress-bars-css/progress-bars.css";
